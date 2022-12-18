@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    <h1 class="title">Изменение статьи</h1>
+    <form action="#" method="POST" class="form">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" class="btn"/>
+    </form>
+</form>
+</body>
+</html>
